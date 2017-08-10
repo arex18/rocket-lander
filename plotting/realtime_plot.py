@@ -10,9 +10,14 @@ pg.setConfigOption('background', 'w')
 pg.setConfigOption('foreground', 'k')
 
 
-class liveUpdating(threading.Thread):
+class RealTime_Graph_Thread(threading.Thread):
+    """
+    This class uses another thread on which to plot a real time graph in a scalable manner. Note that it is not
+    implemented in a fully scalable way: updating of the data is being done externally, with the update being called
+    periodically inside the thread.
+    """
     def __init__(self, settings=None):
-        super(liveUpdating, self).__init__()
+        super(RealTime_Graph_Thread, self).__init__()
 
         if settings is None: self.settings = {'Rows':1, 'Columns':1}
         else: self.settings = settings
@@ -73,9 +78,9 @@ class liveUpdating(threading.Thread):
 
     def __updateGraphs(self):
         for i,data in enumerate(self.data):
-            #if (len(data) != self.previousLenData[i]):
-            self.manual_updateGraph(i, data)
-            self.previousLenData[i] = len(data)
+            if (len(data) != self.previousLenData[i]):
+                self.manual_updateGraph(i, data)
+                self.previousLenData[i] = len(data)
 
     def manual_updateGraph(self, subplot, data):
         self.plotHandles[subplot].setData(data)
@@ -93,7 +98,7 @@ if __name__ == '__main__':
     q = threading.Thread(target=printing)
     q.start()
     data = []
-    handles = liveUpdating({'Rows':1,'Columns':2})
+    handles = RealTime_Graph_Thread({'Rows':1, 'Columns':2})
     handles.start()
 
     time.sleep(1)

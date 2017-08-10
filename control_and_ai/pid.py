@@ -25,7 +25,14 @@ class PID():
 
 
 class PID_Framework():
+
     def compute(self, env, s):
+        """
+        This part was created simply during rapid prototyping for the Evolutionary Strategies
+        :param env:
+        :param s:
+        :return:
+        """
         # Unpack for clarity
         dx, dy, vel_x, vel_y, theta, omega, legContact_left, legContact_right = s
 
@@ -34,30 +41,17 @@ class PID_Framework():
         if angle_target < -0.4: angle_target = -0.4
         hover_target = 0.55 * np.abs(dx)  # target y should be proportional to horizontal offset
 
-        Fe, Fs, psi = self.pid_algorithm(s, [hover_target, angle_target])
+        [Fe, Fs, psi] = self.pid_algorithm(s)
 
         pid_state = [Fe, Fs, psi]
 
-        if env.continuous:
-            a = np.array([Fe, Fs, psi])
-            a = np.clip(a, -1, +1)
-        else:
-            a = 0
-            if Fe > np.abs(Fs) and Fe > 0.05:
-                a = 2
-            elif Fs < -0.05:
-                a = 3
-            elif Fs > +0.05:
-                a = 1
-            elif psi > 15 * DEGTORAD:
-                a = 15 * DEGTORAD
-            elif psi < 15 * DEGTORAD:
-                a = 15 * DEGTORAD
+        a = np.array([Fe, Fs, psi])
+        a = np.clip(a, -1, +1)
 
         return a, pid_state
 
     @abc.abstractmethod
-    def pid_algorithm(self, s, targets):
+    def pid_algorithm(self, s, x_target=None, y_target=None):
         NotImplementedError()
 
 

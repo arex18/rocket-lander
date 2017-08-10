@@ -1,4 +1,4 @@
-from plotting.realtime_plot import liveUpdating
+from plotting.realtime_plot import RealTime_Graph_Thread
 from rocketlander_v2 import *
 import numpy as np
 import scipy.linalg
@@ -103,7 +103,7 @@ def run(env, simulation_settings, controller):
     s = env.state
     if simulation_settings['Graph']:
         data = []
-        handles = liveUpdating(simulation_settings)
+        handles = RealTime_Graph_Thread(simulation_settings)
         handles.start()
 
     total_reward = 0

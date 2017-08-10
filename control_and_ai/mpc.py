@@ -351,16 +351,16 @@ class MPC:
                                                               row_number=3, column_number=1)
         # plt.title('Inputs and States vs. Time Horizon')
 
-        res.plotGraph(None, u[0, :].value.A.flatten() / MAIN_ENGINE_POWER, ax1, labeltext='Main Engine', marker='o')
-        res.plotGraph(None, u[1, :].value.A.flatten() / SIDE_ENGINE_POWER, ax1, labeltext='Side Thrusters', marker='o')
-        res.plotGraph(None, u[2, :].value.A.flatten() / NOZZLE_ANGLE_LIMIT, ax1, labeltext='Nozzle Angle', marker='o')
+        res.plot_graph(None, u[0, :].value.A.flatten() / MAIN_ENGINE_POWER, ax1, labeltext='Main Engine', marker='o')
+        res.plot_graph(None, u[1, :].value.A.flatten() / SIDE_ENGINE_POWER, ax1, labeltext='Side Thrusters', marker='o')
+        res.plot_graph(None, u[2, :].value.A.flatten() / NOZZLE_ANGLE_LIMIT, ax1, labeltext='Nozzle Angle', marker='o')
 
-        res.plotGraph(None, x[0, :].value.A.flatten(), ax2, labeltext='x-position', marker='o')
-        res.plotGraph(None, x[1, :].value.A.flatten(), ax2, labeltext='y-position', marker='o')
-        res.plotGraph(None, x[4, :].value.A.flatten(), ax3, labeltext='theta', marker='o')
+        res.plot_graph(None, x[0, :].value.A.flatten(), ax2, labeltext='x-position', marker='o')
+        res.plot_graph(None, x[1, :].value.A.flatten(), ax2, labeltext='y-position', marker='o')
+        res.plot_graph(None, x[4, :].value.A.flatten(), ax3, labeltext='theta', marker='o')
 
-        res.showLegend([ax1, ax2, ax3])
-        res.showPlot()
+        res.show_legend([ax1, ax2, ax3])
+        res.show_plot()
         plt.show()
         # f = plt.figure()
         #

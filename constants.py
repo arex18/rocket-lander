@@ -3,7 +3,7 @@ import matplotlib
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from gym import spaces
-from plotting.realtime_plot import liveUpdating
+from plotting.realtime_plot import RealTime_Graph_Thread
 import numpy as np
 import Box2D
 # Ignore the warning "Unresolved Reference" in this case.

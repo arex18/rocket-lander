@@ -13,4 +13,4 @@ def convert_state_and_plot_trajectory(state_history):
 
 def convert_state_and_plot_trajectory_2(res, fig, axis, state_history):
     test_history = np.matrix(state_history)
-    res.plotGraph(test_history[:, 0], test_history[:, 1], axis)
+    res.plot_graph(test_history[:, 0], test_history[:, 1], axis)

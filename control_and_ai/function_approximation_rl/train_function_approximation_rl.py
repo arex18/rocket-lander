@@ -46,7 +46,7 @@ def rocket_rl_function_approximation(env, settings : dict, logger, load_path=Non
         print("Training rocket_rl_function_approximation with load_path = {0}, save_path = {1}".format(load_path,
                                                                                                       save_path))
     i = 0
-    from plotting.realtime_plot import liveUpdating
+    from plotting.realtime_plot import RealTime_Graph_Thread
     s = env.reset()
     s = env.get_state_with_barge_and_landing_coordinates(untransformed_state=False) # remove this line if normal state
     reinforcedControl = FunctionApproximation(s, load=load_path, low_discretization=low_discretization, epsilon=0.001, alpha=0.001)
@@ -56,7 +56,7 @@ def rocket_rl_function_approximation(env, settings : dict, logger, load_path=Non
         episode = 1
         if settings['Graph']:
             data = []
-            handles = liveUpdating()
+            handles = RealTime_Graph_Thread()
             handles.start()
         done = False
         for episode in range(settings['Episodes']):

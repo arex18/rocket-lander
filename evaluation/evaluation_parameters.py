@@ -1,6 +1,8 @@
 from constants import DEGTORAD
 
-
+"""
+A total of 24 tests are defined below, varying in initial conditions and disturbances.
+"""
 # 0 Translational velocity
 INITIAL_STATES = [[0.5, 1, 0, -15, 0, 0],  # 1. Free fall with no initial acceleration
                  [0.5, 1, 0, -15, 5 * DEGTORAD, 0],

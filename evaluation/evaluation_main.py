@@ -5,7 +5,12 @@ from control_and_ai.controllers import *
 
 
 class Evaluation_Framework():
+    """
+    This Framework is intended for the evaluation of controllers. Once instantiated, execute_evaluation should be called
+    , with the required parameters.
+    """
     def __init__(self, simulation_settings : dict, controller_settings : dict = None):
+        # Dictionaries holding various simulation and controller specific settings
         self.simulation_settings = simulation_settings
         self.controller_settings = controller_settings
         self.reset()
@@ -24,6 +29,11 @@ class Evaluation_Framework():
         self.DISTURBANCE_FLAG = False
 
     def landing_check(self, state):
+        """
+        Checks if the rocket landed or not.
+        :param state: n x 1 state
+        :return: 1 = Landed, 0 = One Leg Touched Down, -1 = Unsuccessful Landing
+        """
         landed = 0  # -1 = not landed, 0 = partial landing (e.g. half leg out), 1 = landed successfully
         if state[LEFT_GROUND_CONTACT] == 1 and state[RIGHT_GROUND_CONTACT] == 1:
             landed = 1
@@ -175,6 +185,11 @@ def load_numpy_files(file_path):
     return file
 
 def print_action_percentages(action_history):
+    """
+    Helper function for saved actions.
+    :param action_history: 2D list containing all actions taken for that eoisode
+    :return:
+    """
     # action_history = load_numpy_files(file_path)
     print("Fe\tFl\tFr\t|psi| > 3")
     for i in range(len(action_history)):
@@ -182,6 +197,12 @@ def print_action_percentages(action_history):
         print("{0}\t{1}\t{2}\t{3}".format(Fe, Fl, Fr, psi_percentage))
 
 def calculate_stats_percentages(action_history, psi_degree_threshold=3):
+    """
+    Calculates the percentage of time that inputs were active throughout the episode.
+    :param action_history: list of actions. This is converted into a numpy matrix.
+    :param psi_degree_threshold: Angle threshold for the nozzle angle.
+    :return: list of percentages in this order: [Fe, Fsleft, Fsright, psi]
+    """
     action_history = np.matrix(action_history)
     number_of_iterations = len(action_history)
     Fe_percentage = action_history[np.where(action_history[:, 0] > 0)].size / number_of_iterations
@@ -360,7 +381,7 @@ if __name__ == "__main__":
                            'Gather Stats': True,
                            'Episodes': 50}
 
-    file_path, reward_results, final_state_history, action_history = evaluate_unnormalized_longer_state_ddpg()
+    file_path, reward_results, final_state_history, action_history = evaluate_pid()
 
     # np.savez(file_path +'//evaluation_results', reward_results, final_state_history, action_history)
     # np.save(file_path + '//reward_results', reward_results)

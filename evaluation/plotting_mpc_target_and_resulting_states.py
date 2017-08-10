@@ -17,21 +17,21 @@ def plot_single_trajectories(res):
                        'mpc//resulting_states.npy')
 
 
-    fig = res.createFig()
-    ax = res.addsubplot(fig, 111, "X-Position/metres", "Z-Altitude/metres", grid=False)
+    fig = res.create_figure()
+    ax = res.add_subplot(fig, 111, "X-Position/metres", "Z-Altitude/metres", grid=False)
 
-    res.plotGraph(x_target, y_target, ax)
-    res.plotGraph(x_target, y_target, ax, plottype='scatter')
+    res.plot_graph(x_target, y_target, ax)
+    res.plot_graph(x_target, y_target, ax, plottype='scatter')
 
-    res.plotGraph(x_planned, y_planned, ax)
-    res.plotGraph(x_planned, y_planned, ax, plottype='scatter')
+    res.plot_graph(x_planned, y_planned, ax)
+    res.plot_graph(x_planned, y_planned, ax, plottype='scatter')
 
-    res.plotGraph(resulting_states[:-1,0], resulting_states[:-1,1], ax)
-    res.plotGraph(resulting_states[:-1, 0], resulting_states[:-1, 1], ax, plottype='scatter')
+    res.plot_graph(resulting_states[:-1, 0], resulting_states[:-1, 1], ax)
+    res.plot_graph(resulting_states[:-1, 0], resulting_states[:-1, 1], ax, plottype='scatter')
 
-    res.addTitle('X-Z Target, Planned and Actual Trajectories for a Single Optimization Iteration')
+    res.add_title('X-Z Target, Planned and Actual Trajectories for a Single Optimization Iteration')
     res.add_legend(['Target', 'Planned', 'Actual'])
-    res.showPlot()
+    res.show_plot()
 
 res = Graphing(plot_colors=None, fig_size=(8, 5))
 plot_single_trajectories(res)

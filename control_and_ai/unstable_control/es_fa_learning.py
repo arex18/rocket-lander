@@ -82,7 +82,7 @@ def evolutionary_network_variable_psi_normal(simulation_settings, load_path=None
     evolutionary_network(env, evo_strategy_parameters, logger, load_path, save_path)
 
 def rocket_pid_controlled(env, settings):
-    from plotting.realtime_plot import liveUpdating
+    from plotting.realtime_plot import RealTime_Graph_Thread
     x, y, y2 = [], [], []
     i = 0
 
@@ -91,7 +91,7 @@ def rocket_pid_controlled(env, settings):
     s = env.state
     if settings['Graph']:
         data = []
-        handles = liveUpdating(settings)
+        handles = RealTime_Graph_Thread(settings)
         handles.start()
 
     done = False
@@ -128,7 +128,7 @@ def rocket_rl_function_approximation(env, settings : dict, logger, load_path=Non
         print("Training rocket_rl_function_approximation with load_path = {0}, save_path = {1}".format(load_path,
                                                                                                       save_path))
     i = 0
-    from plotting.realtime_plot import liveUpdating
+    from plotting.realtime_plot import RealTime_Graph_Thread
     s = env.reset()
 
     reinforcedControl = FunctionApproximation(s, load=load_path)
@@ -138,7 +138,7 @@ def rocket_rl_function_approximation(env, settings : dict, logger, load_path=Non
         episode = 1
         if settings['Graph']:
             data = []
-            handles = liveUpdating()
+            handles = RealTime_Graph_Thread()
             handles.start()
 
         while (episode <= 2000):
