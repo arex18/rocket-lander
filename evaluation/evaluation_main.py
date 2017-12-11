@@ -1,5 +1,5 @@
 from threading import Timer
-from rocketlander_v2 import RocketLander
+from main_simulation import RocketLander
 from evaluation.evaluation_parameters import *
 from control_and_ai.controllers import *
 

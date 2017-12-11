@@ -1,5 +1,5 @@
 from plotting.realtime_plot import RealTime_Graph_Thread
-from rocketlander_v2 import *
+from main_simulation import *
 import numpy as np
 import scipy.linalg
 import control

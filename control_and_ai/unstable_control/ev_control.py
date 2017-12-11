@@ -1,5 +1,5 @@
 from control_and_ai.helpers import *
-from rocketlander_v2 import *
+from main_simulation import *
 
 hyper_parameters = {
         'population_size': 100,

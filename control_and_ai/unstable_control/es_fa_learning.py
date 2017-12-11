@@ -1,6 +1,6 @@
 import _pickle
 from control_and_ai.evolutionary_strategy import *
-from rocketlander_v2 import *
+from main_simulation import *
 from control_and_ai.pid import *
 from control_and_ai.function_approximation_q_learning import *
 

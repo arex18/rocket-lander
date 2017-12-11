@@ -1,7 +1,7 @@
 import unittest
-from rocketlander_v2 import simulate_kinematics
+from main_simulation import simulate_kinematics
 import numpy as np
-import rocketlander_v2
+import main_simulation
 
 class Env_Tests(unittest.TestCase):
     def __init__(self, *args, **kwargs):
@@ -19,7 +19,7 @@ class Env_Tests(unittest.TestCase):
                                'Initial Force': (0, 0),
                                'Initial Coordinates': (0.5,0.7,0,'normalized')}
 
-        env = rocketlander_v2.RocketLander(simulation_settings)
+        env = main_simulation.RocketLander(simulation_settings)
         state = env.untransformed_state
 
         eps = 1/60

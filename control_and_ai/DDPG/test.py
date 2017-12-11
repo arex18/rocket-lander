@@ -1,7 +1,7 @@
 import numpy as np
 
 from control_and_ai.DDPG.train import Utils
-from rocketlander_v2 import get_state_sample
+from main_simulation import get_state_sample
 
 
 def test(env, agent, simulation_settings):

@@ -1,7 +1,7 @@
 import _pickle
 from control_and_ai.helpers import *
 from control_and_ai.function_approximation_q_learning import *
-from rocketlander_v2 import *
+from main_simulation import *
 
 verbose = True
 logger = logging.getLogger(__name__)

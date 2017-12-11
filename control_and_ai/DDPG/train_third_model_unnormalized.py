@@ -5,7 +5,7 @@ import gym
 import argparse
 import sklearn.preprocessing
 sys.path.append('C://Users//REUBS_LEN//PycharmProjects//RocketLanding')
-from rocketlander_v2 import get_state_sample
+from main_simulation import get_state_sample
 from constants import *
 from .utils import Utils
 

@@ -1,6 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list default="true" id="54f612f5-d975-4eb9-9d99-6094d28c23e7" name="Default" comment="Refactoring. No major changes. Cleaning, documentation and testing to follow.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/control_and_ai/function_approximation_rl/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/control_and_ai/unstable_control/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evaluation/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main_simulation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plotting/__init__.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Prototyping-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/ArmBase.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/one_link/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/one_link/arm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/one_link/arm1link.msim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/one_link/arm_python.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/one_link/build/temp.linux-x86_64-2.7/py1LinkArm.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/one_link/mplshlib.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/one_link/mpltable.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/one_link/onelinkarm.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/one_link/py1LinkArm.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/one_link/py1LinkArm.pyx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/one_link/py1LinkArm.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/one_link/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/arm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/arm3link.msim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/arm3link_damping.msim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/arm3link_gravity.msim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/arm3link_gravity_damping.msim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/arm3linksmallmass.msim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/build/temp.linux-x86_64-2.7/py3LinkArm.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/build/temp.linux-x86_64-2.7/py3LinkArm_damping.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/build/temp.linux-x86_64-2.7/py3LinkArm_gravity.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/build/temp.linux-x86_64-2.7/py3LinkArm_gravity_damping.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/build/temp.linux-x86_64-2.7/py3LinkArm_smallmass.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/build/temp.linux-x86_64-3.5/py3LinkArm.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/build/temp.linux-x86_64-3.5/py3LinkArm_damping.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/build/temp.linux-x86_64-3.5/py3LinkArm_gravity.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/build/temp.linux-x86_64-3.5/py3LinkArm_gravity_damping.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/build/temp.linux-x86_64-3.5/py3LinkArm_smallmass.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/mplshlib.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/mpltable.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm.cpython-35m-x86_64-linux-gnu.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm.pyx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm_damping.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm_damping.pyx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm_damping.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm_gravity.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm_gravity.pyx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm_gravity.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm_gravity_damping.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm_gravity_damping.pyx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm_gravity_damping.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm_smallmass.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm_smallmass.pyx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/py3LinkArm_smallmass.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/threelinkarm.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/threelinkarm_damping.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/threelinkarm_gravity.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/threelinkarm_gravity_damping.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/three_link/threelinkarm_smallmass.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/MidLevel2Link.msim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/arm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/arm2base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/arm_python.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/arm_python_todorov.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/arm_todorov.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/build/temp.linux-x86_64-2.7/py2LinkArm.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/build/temp.linux-x86_64-3.5/py2LinkArm.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/mplshlib.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/mpltable.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/py2LinkArm.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/py2LinkArm.cpython-35m-x86_64-linux-gnu.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/py2LinkArm.pyx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/arms/two_link/twolinkarm.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/ahf.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/control_class.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/dmp.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/forcefield.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/gc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/gradient_approximation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/ilqr.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/lqr.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/osc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/recorder.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/shell.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/signal.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/target_list.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/trace.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/trajectory.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/controllers/weights/rnn_weights-trial13405-err0.00005.npz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/img/three_link/svgforearm2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/img/three_link/svghand2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/img/three_link/svgupperarm2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/img/whiteboard.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/run.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/sim_and_plot.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/sim_and_plot_pygame.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/follow_mouse.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/postural.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/random_movements.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/reach.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/d.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/e.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/h.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/l.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/o.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/r.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/read_path.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_tut/tasks/write_data/w.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/environments/cartpole.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/environments/lunarlander.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prototyping/Prototyping.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prototyping/prototyping_and_testing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rocketlander_v2.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/RocketLanding.iml" afterPath="$PROJECT_DIR$/.idea/RocketLanding.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/test.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/train.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/train.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/train_ddpg.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/train_ddpg.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/train_ddpg_gpu.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/train_ddpg_gpu.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/train_second_model.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/train_second_model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/train_third_model_normalized.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/train_third_model_normalized.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/train_third_model_unnormalized.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/train_third_model_unnormalized.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/controllers.py" afterPath="$PROJECT_DIR$/control_and_ai/controllers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/evolutionary_strategy.py" afterPath="$PROJECT_DIR$/control_and_ai/evolutionary_strategy.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/function_approximation_rl/train_function_approximation_rl.py" afterPath="$PROJECT_DIR$/control_and_ai/function_approximation_rl/train_function_approximation_rl.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/unstable_control/es_fa_learning.py" afterPath="$PROJECT_DIR$/control_and_ai/unstable_control/es_fa_learning.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/unstable_control/ev_control.py" afterPath="$PROJECT_DIR$/control_and_ai/unstable_control/ev_control.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/unstable_control/evolution_strategy_training.py" afterPath="$PROJECT_DIR$/control_and_ai/unstable_control/evolution_strategy_training.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/unstable_control/lqr_control.py" afterPath="$PROJECT_DIR$/control_and_ai/unstable_control/lqr_control.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/unstable_control/mpc_control.py" afterPath="$PROJECT_DIR$/control_and_ai/unstable_control/mpc_control.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/rocketlander.py" afterPath="$PROJECT_DIR$/environments/rocketlander.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluation/evaluation_main.py" afterPath="$PROJECT_DIR$/evaluation/evaluation_main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unit_tests/test_environment_steps_lqr.py" afterPath="$PROJECT_DIR$/unit_tests/test_environment_steps_lqr.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unit_tests/test_mpc_control.py" afterPath="$PROJECT_DIR$/unit_tests/test_mpc_control.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,25 +174,228 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plotting/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plotting_trajectory.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluation/plotting_trajectory.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plotting_multiple_trajectories.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluation/plotting_multiple_trajectories.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plotty.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plotting/plotty.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4375">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rocketlander.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/environments/rocketlander.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="114" column="100" lean-forward="false" selection-start-line="114" selection-start-column="100" selection-end-line="114" selection-end-column="100" />
+              <folding>
+                <element signature="e#0#106#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control_and_ai/unstable_control/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control_and_ai/function_approximation_rl/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evolutionary_strategy.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control_and_ai/evolutionary_strategy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2772">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_simulation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_simulation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/plotting/__init__.py" />
+        <option value="$PROJECT_DIR$/evaluation/__init__.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/DDPG/__init__.py" />
+        <option value="$PROJECT_DIR$/rocketlander_v2.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/unstable_control/__init__.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/function_approximation_rl/__init__.py" />
+        <option value="$PROJECT_DIR$/environments/rocketlander.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1911" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1098" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="rocket-lander" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rocket-lander" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.rocketlander_v2">
+    <configuration name="rocketlander_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RocketLanding" />
+      <option name="SCRIPT_NAME" value="C:\Users\reube\PycharmProjects\rocket-lander\main_simulation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.rocketlander_v2" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="54f612f5-d975-4eb9-9d99-6094d28c23e7" name="Default" comment="" />
       <created>1492212871261</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -36,11 +403,213 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1911" y="-9" width="1938" height="1098" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1336207" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactoring. No major changes. Cleaning, documentation and testing to follow." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring. No major changes. Cleaning, documentation and testing to follow." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/DDPG/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ipynb_checkpoints/Prototyping-checkpoint.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/lunarlander.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototyping/prototyping_and_testing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="42" column="17" lean-forward="true" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotting/realtime_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotting/plotty.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4375">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotting/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation/plotting_trajectory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation/plotting_multiple_trajectories.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/unstable_control/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/function_approximation_rl/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/evolutionary_strategy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2772">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_simulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/rocketlander.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="114" column="100" lean-forward="false" selection-start-line="114" selection-start-column="100" selection-end-line="114" selection-end-column="100" />
+          <folding>
+            <element signature="e#0#106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

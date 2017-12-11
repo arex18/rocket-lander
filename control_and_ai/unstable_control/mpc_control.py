@@ -1,5 +1,5 @@
 from constants import *
-from rocketlander_v2 import RocketLander, compute_derivatives
+from main_simulation import RocketLander, compute_derivatives
 from control_and_ai.helpers import *
 
 

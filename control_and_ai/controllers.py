@@ -1,5 +1,5 @@
 from constants import *
-from rocketlander_v2 import compute_derivatives
+from main_simulation import compute_derivatives
 
 ''' Main Environment Parent Class'''
 class EnvController():
@@ -170,7 +170,7 @@ class General_DDPG_Controller():
         # test(env,controller,simulation_settings)
 
     def sample_state_and_create_normalizer(self):
-        from rocketlander_v2 import get_state_sample
+        from main_simulation import get_state_sample
 
         state_samples = get_state_sample(samples=2000, normal_state=self.normal_state_FLAG,
                                          untransformed_state=self.untransformed_state_FLAG)

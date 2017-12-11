@@ -2,7 +2,7 @@ import logging
 import _pickle
 from constants import *
 from .helpers import *
-from rocketlander_v2 import RocketLander
+from main_simulation import RocketLander
 
 class EvolutionNetwork():
     def __init__(self, hyper_parameters: dict, loadfilename=None):

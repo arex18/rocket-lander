@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 from control_and_ai.unstable_control import mpc_control
-from rocketlander_v2 import RocketLander
+from main_simulation import RocketLander
 
 
 class MPC_Control_Tests(unittest.TestCase):

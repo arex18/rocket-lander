@@ -4,7 +4,7 @@ from DDPG.train_third_model_normalized import train as train_third_model_normali
 
 from constants import DEGTORAD
 from control_and_ai.DDPG.exploration import OUPolicy
-from rocketlander_v2 import RocketLander
+from main_simulation import RocketLander
 
 FLAGS = set_up()
 
