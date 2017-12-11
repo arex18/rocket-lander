@@ -1,15 +1,12 @@
 import matplotlib.pyplot as plt
 import matplotlib.pylab as pylab
-import matplotlib.finance as finance
-import matplotlib.dates as mdates
 import matplotlib.finance
 matplotlib.rcParams.update({'font.size':9})
 from cycler import cycler
-import logging
 import itertools
 import pandas as pd
 import numpy as np
-from matplotlib import style
+
 
 def create_realtime_graphs(initialSubplot=111, x1=0, x2=0, y1=0, y2=0):
     """

@@ -1,6 +1,0 @@
-model_checkpoint_path: "C://Users//REUBS_LEN//PycharmProjects//RocketLanding//DDPG//model_normal_state/DDPG.ckpt-250"
-all_model_checkpoint_paths: "C://Users//REUBS_LEN//PycharmProjects//RocketLanding//DDPG//model_normal_state/DDPG.ckpt-50"
-all_model_checkpoint_paths: "C://Users//REUBS_LEN//PycharmProjects//RocketLanding//DDPG//model_normal_state/DDPG.ckpt-100"
-all_model_checkpoint_paths: "C://Users//REUBS_LEN//PycharmProjects//RocketLanding//DDPG//model_normal_state/DDPG.ckpt-150"
-all_model_checkpoint_paths: "C://Users//REUBS_LEN//PycharmProjects//RocketLanding//DDPG//model_normal_state/DDPG.ckpt-200"
-all_model_checkpoint_paths: "C://Users//REUBS_LEN//PycharmProjects//RocketLanding//DDPG//model_normal_state/DDPG.ckpt-250"

@@ -1,6 +1,7 @@
 import sys, math
 import matplotlib
 matplotlib.use('TkAgg')
+# TODO clean this up, add proper imports to files.
 import matplotlib.pyplot as plt
 from gym import spaces
 from plotting.realtime_plot import RealTime_Graph_Thread

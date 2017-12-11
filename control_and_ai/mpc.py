@@ -1,11 +1,6 @@
-import logging
-import _pickle
 from constants import *
 
-
-
 """ MPC """
-
 class MPC:
     def __init__(self, env):
         # last 2 state elements are not used since the environment includes left leg contact and right leg contact

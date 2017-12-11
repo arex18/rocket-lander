@@ -1,5 +1,3 @@
-import logging
-import _pickle
 from constants import *
 from .helpers import *
 from main_simulation import RocketLander

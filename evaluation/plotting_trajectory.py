@@ -1,6 +1,7 @@
 from plotting.plotty import  *
 import numpy as np
 
+
 def plot_trajectory(x, y, *args):
     plt.plot(x, y)
     plt.title("X-Z Trajectory Profile. Barge X-Position = 16.5.")

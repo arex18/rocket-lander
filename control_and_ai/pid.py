@@ -1,10 +1,6 @@
-import logging
-import _pickle
 from constants import *
 
 """ PID """
-
-
 class PID():
     def __init__(self, Kp, Ki, Kd):
         self.Kp = Kp
@@ -22,7 +18,6 @@ class PID():
     def computeOutput(self, error, dt_error):
         self.incrementIntegralError(error)
         return self.Kp * error + self.Ki * self.accumulated_error + self.Kd * dt_error
-
 
 class PID_Framework():
 

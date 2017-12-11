@@ -1,7 +1,7 @@
 import tensorflow as tf
-from DDPG.ddpg import DDPG
-from DDPG.train import set_up
-from DDPG.train_third_model_unnormalized import train as train_third_model_unnormalized
+from control_and_ai.DDPG.ddpg import DDPG
+from control_and_ai.DDPG.train import set_up
+from control_and_ai.DDPG.train_third_model_unnormalized import train as train_third_model_unnormalized
 
 from constants import DEGTORAD
 from control_and_ai.DDPG.exploration import OUPolicy
