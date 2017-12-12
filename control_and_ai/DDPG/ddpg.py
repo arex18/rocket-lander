@@ -1,3 +1,9 @@
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: Experience buffer.
+"""
+
 # replication of the deep deterministic policy gradient paper by Lillicrap et al.
 import tensorflow as tf
 import numpy as np

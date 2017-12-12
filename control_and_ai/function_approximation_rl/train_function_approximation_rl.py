@@ -1,4 +1,11 @@
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: Scripts that train the Function Approximation RL networks.
+"""
+
 import _pickle
+import logging
 from control_and_ai.helpers import *
 from control_and_ai.function_approximation_q_learning import *
 from main_simulation import *
@@ -45,19 +52,13 @@ def rocket_rl_function_approximation(env, settings : dict, logger, load_path=Non
     else:
         print("Training rocket_rl_function_approximation with load_path = {0}, save_path = {1}".format(load_path,
                                                                                                       save_path))
-    i = 0
-    from plotting.realtime_plot import RealTime_Graph_Thread
-    s = env.reset()
+    env.reset()
     s = env.get_state_with_barge_and_landing_coordinates(untransformed_state=False) # remove this line if normal state
     reinforcedControl = FunctionApproximation(s, load=load_path, low_discretization=low_discretization, epsilon=0.001, alpha=0.001)
     max_steps = 1000
     steps = 0
     def train():
         episode = 1
-        if settings['Graph']:
-            data = []
-            handles = RealTime_Graph_Thread()
-            handles.start()
         done = False
         for episode in range(settings['Episodes']):
             s = env.reset()
@@ -72,10 +73,7 @@ def rocket_rl_function_approximation(env, settings : dict, logger, load_path=Non
 
                 if done:
                     logger.info('Episode:\t{0}\tReward:\t{1}'.format(episode, reinforcedControl.total_reward))
-                    if settings['Graph']:
-                        if handles.isAlive():
-                                data.append(reinforcedControl.total_reward)
-                                handles.data[0] = data
+
                     reinforcedControl.reset()
                     break
 

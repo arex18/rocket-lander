@@ -1,9 +1,17 @@
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: Function Approximation Q-Learning.
+"""
+
 import _pickle
+import numpy as np
 from constants import *
 
 
-""" Reinforcement Learning and Evolutionary Strategy """
 class FunctionApproximation():
+    """ Q-Learning implementation. """
+
     def __init__(self, state, low_discretization, load=None, epsilon=0.1, alpha=0.001):
         self.low_discretization = low_discretization
         self.gamma = 0.9
@@ -98,10 +106,6 @@ class FunctionApproximation():
     def maxQ(self, s):
         return np.max(self.Q_all_states(s))
 
-    # def gradQ(self, s, a):
-    #     return self.features(s, a).reshape(self.numberoffeatures, 1)
-
-    # ----------------------------------------------------------------
     def square(self, list):
         return [i ** 2 for i in list]
 

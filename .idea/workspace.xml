@@ -1,51 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54f612f5-d975-4eb9-9d99-6094d28c23e7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/control_and_ai/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/__init__.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/DDPG.ckpt-100.data-00000-of-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/DDPG.ckpt-100.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/DDPG.ckpt-100.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/DDPG.ckpt-150.data-00000-of-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/DDPG.ckpt-150.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/DDPG.ckpt-150.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/DDPG.ckpt-200.data-00000-of-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/DDPG.ckpt-200.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/DDPG.ckpt-200.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/DDPG.ckpt-250.data-00000-of-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/DDPG.ckpt-250.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/DDPG.ckpt-250.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/DDPG.ckpt-50.data-00000-of-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/DDPG.ckpt-50.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/DDPG.ckpt-50.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_2_longer_unnormalized_state/checkpoint" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/DDPG.ckpt-100.data-00000-of-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/DDPG.ckpt-100.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/DDPG.ckpt-100.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/DDPG.ckpt-150.data-00000-of-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/DDPG.ckpt-150.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/DDPG.ckpt-150.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/DDPG.ckpt-200.data-00000-of-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/DDPG.ckpt-200.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/DDPG.ckpt-200.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/DDPG.ckpt-250.data-00000-of-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/DDPG.ckpt-250.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/DDPG.ckpt-250.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/DDPG.ckpt-50.data-00000-of-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/DDPG.ckpt-50.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/DDPG.ckpt-50.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DDPG/model_normal_state/checkpoint" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="54f612f5-d975-4eb9-9d99-6094d28c23e7" name="Default" comment="Some code cleanups.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/RocketLanding.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_and_ai/unstable_control/es_fa_learning.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/control_and_ai/unstable_control/ev_control.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plotting/realtime_plot.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/unit_tests/test_environment_steps_lqr.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/unit_tests/test_mpc_control.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/__init__.py" afterPath="$PROJECT_DIR$/evaluation_scripts/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/ddpg/model_1_normal_state/action_history.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/ddpg/model_1_normal_state/action_history.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/ddpg/model_1_normal_state/evaluation_results.npz" afterPath="$PROJECT_DIR$/evaluation_scripts/ddpg/model_1_normal_state/evaluation_results.npz" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/ddpg/model_1_normal_state/final_state_history.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/ddpg/model_1_normal_state/final_state_history.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/ddpg/model_1_normal_state/reward_results.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/ddpg/model_1_normal_state/reward_results.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/ddpg/model_2_unnormalized_longer_state/action_history.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/ddpg/model_2_unnormalized_longer_state/action_history.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/ddpg/model_2_unnormalized_longer_state/evaluation_results.npz" afterPath="$PROJECT_DIR$/evaluation_scripts/ddpg/model_2_unnormalized_longer_state/evaluation_results.npz" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/ddpg/model_2_unnormalized_longer_state/final_state_history.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/ddpg/model_2_unnormalized_longer_state/final_state_history.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/ddpg/model_2_unnormalized_longer_state/reward_results.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/ddpg/model_2_unnormalized_longer_state/reward_results.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/evaluation_main.py" afterPath="$PROJECT_DIR$/evaluation_scripts/evaluation_main.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/evaluation_parameters.py" afterPath="$PROJECT_DIR$/evaluation_scripts/evaluation_parameters.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501265354.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501265354.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501267340.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501267340.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501267675.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501267675.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501267928.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501267928.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501267993.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501267993.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501268616.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501268616.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501268798.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501268798.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501269208.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501269208.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501269249.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501269249.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501323973.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501323973.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501324105.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501324105.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501324345.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501324345.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501324541.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501324541.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501324590.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501324590.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501324647.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501324647.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501324712.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501324712.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501327556.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501327556.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501327658.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501327658.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501327753.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501327753.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501327814.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501327814.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501328330.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501328330.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501328455.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501328455.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501328500.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501328500.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501333017.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501333017.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501333088.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501333088.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501333236.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501333236.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501333382.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501333382.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501333523.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501333523.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501333570.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501333570.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501333801.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501333801.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501333855.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501333855.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501333921.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501333921.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501333990.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501333990.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501334439.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501334439.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501334788.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501334788.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501334848.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501334848.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501337564.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501337564.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501337702.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501337702.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501337818.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501337818.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501337870.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501337870.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501337923.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501337923.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501337988.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501337988.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501426827.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501426827.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501522190.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501522190.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501522243.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501522243.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501679224.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501679224.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501680396.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501680396.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501680573.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501680573.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501681045.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501681045.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1501681179.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1501681179.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1502187032.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1502187032.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1502187170.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1502187170.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1502187373.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1502187373.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1502207055.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1502207055.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1502207153.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1502207153.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1502207227.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1502207227.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1502207605.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1502207605.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1502293659.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1502293659.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1502293778.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1502293778.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1502293899.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1502293899.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1502293997.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1502293997.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1502294441.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1502294441.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1502294705.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1502294705.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/logs/events.out.tfevents.1502294997.LAPTOP-43KECMUO" afterPath="$PROJECT_DIR$/evaluation_scripts/logs/events.out.tfevents.1502294997.LAPTOP-43KECMUO" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/mpc/action_history.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/mpc/action_history.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/mpc/evaluation_results.npz" afterPath="$PROJECT_DIR$/evaluation_scripts/mpc/evaluation_results.npz" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/mpc/final_state_history.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/mpc/final_state_history.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/mpc/planned_actions_1.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/mpc/planned_actions_1.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/mpc/resulting_states.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/mpc/resulting_states.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/mpc/reward_results.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/mpc/reward_results.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/mpc/x_planned.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/mpc/x_planned.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/mpc/x_target.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/mpc/x_target.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/mpc/y_planned.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/mpc/y_planned.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/mpc/y_target.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/mpc/y_target.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/pid/action_history.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/pid/action_history.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/pid/evaluation_results.npz" afterPath="$PROJECT_DIR$/evaluation_scripts/pid/evaluation_results.npz" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/pid/final_state_history.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/pid/final_state_history.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/pid/reward_results.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/pid/reward_results.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/plotting_control_actions.py" afterPath="$PROJECT_DIR$/evaluation_scripts/plotting_control_actions.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/plotting_mpc_target_and_resulting_states.py" afterPath="$PROJECT_DIR$/evaluation_scripts/plotting_mpc_target_and_resulting_states.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/plotting_multiple_trajectories.py" afterPath="$PROJECT_DIR$/evaluation_scripts/plotting_multiple_trajectories.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/plotting_trajectory.py" afterPath="$PROJECT_DIR$/evaluation_scripts/plotting_trajectory.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/rl_q_learning/high_discretization/action_history.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/rl_q_learning/high_discretization/action_history.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/rl_q_learning/high_discretization/evaluation_results.npz" afterPath="$PROJECT_DIR$/evaluation_scripts/rl_q_learning/high_discretization/evaluation_results.npz" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/rl_q_learning/high_discretization/final_state_history.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/rl_q_learning/high_discretization/final_state_history.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/rl_q_learning/high_discretization/reward_results.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/rl_q_learning/high_discretization/reward_results.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/rl_q_learning/high_discretization_longer_state/action_history.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/rl_q_learning/high_discretization_longer_state/action_history.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/rl_q_learning/high_discretization_longer_state/evaluation_results.npz" afterPath="$PROJECT_DIR$/evaluation_scripts/rl_q_learning/high_discretization_longer_state/evaluation_results.npz" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/rl_q_learning/high_discretization_longer_state/final_state_history.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/rl_q_learning/high_discretization_longer_state/final_state_history.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/rl_q_learning/high_discretization_longer_state/reward_results.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/rl_q_learning/high_discretization_longer_state/reward_results.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/rl_q_learning/low_discretization/action_history.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/rl_q_learning/low_discretization/action_history.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/rl_q_learning/low_discretization/evaluation_results.npz" afterPath="$PROJECT_DIR$/evaluation_scripts/rl_q_learning/low_discretization/evaluation_results.npz" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/rl_q_learning/low_discretization/final_state_history.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/rl_q_learning/low_discretization/final_state_history.npy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/evaluation/rl_q_learning/low_discretization/reward_results.npy" afterPath="$PROJECT_DIR$/evaluation_scripts/rl_q_learning/low_discretization/reward_results.npy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/constants.py" afterPath="$PROJECT_DIR$/constants.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/README" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/actor.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/actor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/critic.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/critic.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/ddpg.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/ddpg.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/exploration.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/exploration.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/test.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/train.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/train.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/train_ddpg.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/train_ddpg.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/train_ddpg_gpu.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/train_ddpg_gpu.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/train_second_model.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/train_second_model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/train_third_model_normalized.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/train_third_model_normalized.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/train_third_model_unnormalized.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/train_third_model_unnormalized.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/DDPG/utils.py" afterPath="$PROJECT_DIR$/control_and_ai/DDPG/utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/controllers.py" afterPath="$PROJECT_DIR$/control_and_ai/controllers.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/evolutionary_strategy.py" afterPath="$PROJECT_DIR$/control_and_ai/evolutionary_strategy.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/function_approximation_q_learning.py" afterPath="$PROJECT_DIR$/control_and_ai/function_approximation_q_learning.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/function_approximation_rl/train_function_approximation_rl.py" afterPath="$PROJECT_DIR$/control_and_ai/function_approximation_rl/train_function_approximation_rl.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/helpers.py" afterPath="$PROJECT_DIR$/control_and_ai/helpers.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/mpc.py" afterPath="$PROJECT_DIR$/control_and_ai/mpc.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/pid.py" afterPath="$PROJECT_DIR$/control_and_ai/pid.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluation/plotting_trajectory.py" afterPath="$PROJECT_DIR$/evaluation/plotting_trajectory.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/unstable_control/evolution_strategy_training.py" afterPath="$PROJECT_DIR$/control_and_ai/unstable_control/evolution_strategy_training.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/unstable_control/lqr_control.py" afterPath="$PROJECT_DIR$/control_and_ai/unstable_control/lqr_control.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_and_ai/unstable_control/mpc_control.py" afterPath="$PROJECT_DIR$/control_and_ai/unstable_control/mpc_control.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/rocketlander.py" afterPath="$PROJECT_DIR$/environments/rocketlander.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main_simulation.py" afterPath="$PROJECT_DIR$/main_simulation.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plotting/plotty.py" afterPath="$PROJECT_DIR$/plotting/plotty.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,115 +157,144 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="evaluation_main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluation/evaluation_main.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="rocketlander.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/environments/rocketlander.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="12633">
+              <caret line="898" column="40" lean-forward="false" selection-start-line="898" selection-start-column="40" selection-end-line="898" selection-end-column="40" />
               <folding>
-                <element signature="e#0#27#0" expanded="true" />
+                <element signature="e#226#332#0" expanded="true" />
+                <element signature="e#796#849#0" expanded="false" />
+                <element signature="e#1063#1188#0" expanded="false" />
+                <element signature="e#1265#1391#0" expanded="false" />
+                <element signature="e#2752#2836#0" expanded="false" />
+                <element signature="e#2868#4873#0" expanded="false" />
+                <element signature="e#3349#3368#0" expanded="false" />
+                <element signature="e#3996#4302#0" expanded="false" />
+                <element signature="e#4267#4302#0" expanded="false" />
+                <element signature="e#4576#4742#0" expanded="false" />
+                <element signature="e#5702#6265#0" expanded="false" />
+                <element signature="e#5983#6265#0" expanded="false" />
+                <element signature="e#6028#6096#0" expanded="false" />
+                <element signature="e#6320#6429#0" expanded="false" />
+                <element signature="e#7593#7864#0" expanded="false" />
+                <element signature="e#7992#8028#0" expanded="false" />
+                <element signature="e#8075#8111#0" expanded="false" />
+                <element signature="e#8376#10230#0" expanded="false" />
+                <element signature="e#8376#8454#0" expanded="false" />
+                <element signature="e#8797#10141#0" expanded="false" />
+                <element signature="e#8835#10141#0" expanded="false" />
+                <element signature="e#10296#12914#0" expanded="false" />
+                <element signature="e#10296#10374#0" expanded="false" />
+                <element signature="e#10784#12878#0" expanded="false" />
+                <element signature="e#10849#12878#0" expanded="false" />
+                <element signature="e#11056#11115#0" expanded="false" />
+                <element signature="e#11972#12061#0" expanded="false" />
+                <element signature="e#12242#12653#0" expanded="false" />
+                <element signature="e#12698#12878#0" expanded="false" />
+                <element signature="e#12712#12877#0" expanded="false" />
+                <element signature="e#38689#39047#0" expanded="false" />
+                <element signature="e#38723#39047#0" expanded="false" />
+                <element signature="e#38766#38944#0" expanded="false" />
+                <element signature="e#38847#38919#0" expanded="false" />
+                <element signature="e#39457#39524#0" expanded="false" />
+                <element signature="e#39720#40117#0" expanded="false" />
+                <element signature="e#40803#40845#0" expanded="false" />
+                <element signature="e#40935#41251#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="evaluation_parameters.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluation/evaluation_parameters.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-297">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plotting_control_actions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluation/plotting_control_actions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plotting_mpc_target_and_resulting_states.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluation/plotting_mpc_target_and_resulting_states.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plotting_multiple_trajectories.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluation/plotting_multiple_trajectories.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
-              <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plotting_trajectory.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluation/plotting_trajectory.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plotty.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plotting/plotty.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="realtime_plot.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plotting/realtime_plot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="349">
+              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Box2D.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/conda/conda/envs/HERCULES/Lib/site-packages/Box2D/Box2D.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="5724" column="8" lean-forward="false" selection-start-line="5724" selection-start-column="8" selection-end-line="5724" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mtrand.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1923564988/numpy/random/mtrand.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="2760" column="4" lean-forward="false" selection-start-line="2760" selection-start-column="4" selection-end-line="2760" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evolutionary_strategy.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control_and_ai/evolutionary_strategy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="72" lean-forward="false" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="function_approximation_q_learning.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control_and_ai/function_approximation_q_learning.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helpers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control_and_ai/helpers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_simulation.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main_simulation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mpc.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control_and_ai/mpc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pid.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control_and_ai/pid.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,6 +307,31 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>'Rows'</find>
+      <find>MPC</find>
+      <find>'Columns</find>
+      <find>evolutionary</find>
+      <find>RealTime_Graph_Thread</find>
+      <find>state</find>
+      <find>Fe</find>
+      <find>set_</find>
+      <find>set_up</find>
+      <find>angularVelocity</find>
+      <find>compute_cost</find>
+      <find>self.initial_barge_coordinates</find>
+      <find>_create_labels</find>
+      <find>all</find>
+      <find>angular_ve</find>
+      <find>self.lander.angular_velocity</find>
+      <find>Friction</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>angular_velocity</replace>
+      <replace>self.lander.angularVelocity</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -194,17 +346,47 @@
         <option value="$PROJECT_DIR$/rocketlander_v2.py" />
         <option value="$PROJECT_DIR$/control_and_ai/unstable_control/__init__.py" />
         <option value="$PROJECT_DIR$/control_and_ai/function_approximation_rl/__init__.py" />
-        <option value="$PROJECT_DIR$/environments/rocketlander.py" />
+        <option value="$PROJECT_DIR$/evaluation/plotting_trajectory.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/control_and_ai/DDPG/train_ddpg.py" />
-        <option value="$PROJECT_DIR$/control_and_ai/evolutionary_strategy.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/unstable_control/ev_control.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/unstable_control/lqr_control.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/unstable_control/mpc_control.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/unstable_control/es_fa_learning.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/unstable_control/evolution_strategy_training.py" />
+        <option value="$PROJECT_DIR$/evaluation/evaluation_main.py" />
+        <option value="$PROJECT_DIR$/unit_tests/test_mpc_control.py" />
+        <option value="$PROJECT_DIR$/plotting/plotty.py" />
         <option value="$PROJECT_DIR$/control_and_ai/function_approximation_q_learning.py" />
-        <option value="$PROJECT_DIR$/control_and_ai/helpers.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/evolutionary_strategy.py" />
+        <option value="$PROJECT_DIR$/plotting/realtime_plot.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/function_approximation_rl/train_function_approximation_rl.py" />
         <option value="$PROJECT_DIR$/control_and_ai/mpc.py" />
         <option value="$PROJECT_DIR$/control_and_ai/pid.py" />
-        <option value="$PROJECT_DIR$/evaluation/plotting_trajectory.py" />
-        <option value="$PROJECT_DIR$/plotting/plotty.py" />
+        <option value="$PROJECT_DIR$/evaluation_scripts/evaluation_main.py" />
+        <option value="$PROJECT_DIR$/evaluation_scripts/evaluation_parameters.py" />
+        <option value="$PROJECT_DIR$/evaluation_scripts/plotting_control_actions.py" />
+        <option value="$PROJECT_DIR$/evaluation_scripts/plotting_mpc_target_and_resulting_states.py" />
+        <option value="$PROJECT_DIR$/evaluation_scripts/plotting_multiple_trajectories.py" />
+        <option value="$PROJECT_DIR$/evaluation_scripts/plotting_trajectory.py" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/control_and_ai/DDPG/critic.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/DDPG/actor.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/DDPG/ddpg.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/DDPG/README" />
+        <option value="$PROJECT_DIR$/control_and_ai/DDPG/test.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/DDPG/train_ddpg.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/DDPG/train_ddpg_gpu.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/DDPG/train_third_model_unnormalized.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/DDPG/train_third_model_normalized.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/DDPG/train_second_model.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/DDPG/train.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/DDPG/utils.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/DDPG/exploration.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/controllers.py" />
+        <option value="$PROJECT_DIR$/control_and_ai/helpers.py" />
+        <option value="$PROJECT_DIR$/environments/rocketlander.py" />
         <option value="$PROJECT_DIR$/constants.py" />
+        <option value="$PROJECT_DIR$/main_simulation.py" />
       </list>
     </option>
   </component>
@@ -232,8 +414,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,22 +429,26 @@
             <path>
               <item name="rocket-lander" type="b2602c69:ProjectViewProjectNode" />
               <item name="rocket-lander" type="462c0819:PsiDirectoryNode" />
+              <item name="control_and_ai" type="462c0819:PsiDirectoryNode" />
+              <item name="DDPG" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rocket-lander" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rocket-lander" type="462c0819:PsiDirectoryNode" />
+              <item name="control_and_ai" type="462c0819:PsiDirectoryNode" />
+              <item name="function_approximation_rl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rocket-lander" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rocket-lander" type="462c0819:PsiDirectoryNode" />
               <item name="environments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rocket-lander" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rocket-lander" type="462c0819:PsiDirectoryNode" />
-              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rocket-lander" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rocket-lander" type="462c0819:PsiDirectoryNode" />
-              <item name="plotting" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,7 +467,41 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.rocketlander_v2">
+  <component name="RunManager" selected="Python.main_simulation">
+    <configuration name="main_simulation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="rocket-lander" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_simulation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="realtime_plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plotting" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="rocket-lander" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotting/realtime_plot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="rocketlander_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -301,9 +519,16 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.rocketlander_v2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.main_simulation" />
+      <item index="2" class="java.lang.String" itemvalue="Python.realtime_plot" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.rocketlander_v2" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.main_simulation" />
+        <item index="1" class="java.lang.String" itemvalue="Python.realtime_plot" />
+        <item index="2" class="java.lang.String" itemvalue="Python.rocketlander_v2" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +550,21 @@
       <option name="project" value="LOCAL" />
       <updated>1512951896441</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactoring. Added TODOs, removed unnecessary imports.">
+      <created>1512952331741</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1512952331741</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Corrected .gitignore.">
+      <created>1512952591404</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1512952591404</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -341,24 +580,28 @@
     <frame x="1911" y="-9" width="1938" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20837809" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5215517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1336207" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19719827" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38038793" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="SFDX" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -366,13 +609,264 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactoring. No major changes. Cleaning, documentation and testing to follow." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring. No major changes. Cleaning, documentation and testing to follow." />
+    <MESSAGE value="Refactoring. Added TODOs, removed unnecessary imports." />
+    <MESSAGE value="Corrected .gitignore." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected .gitignore." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/plotting/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/function_approximation_rl/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_scripts/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/unstable_control/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/unstable_control/ev_control.py" />
+    <entry file="file://$PROJECT_DIR$/control_and_ai/unstable_control/es_fa_learning.py" />
+    <entry file="file://$PROJECT_DIR$/control_and_ai/unstable_control/evolution_strategy_training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/unstable_control/lqr_control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/unstable_control/mpc_control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/conda/conda/envs/HERCULES/Lib/site-packages/PyQt5/QtCore.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="7355" column="8" lean-forward="false" selection-start-line="7355" selection-start-column="8" selection-end-line="7355" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotting/realtime_plot.py" />
+    <entry file="file://$PROJECT_DIR$/control_and_ai/function_approximation_rl/train_function_approximation_rl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_scripts/evaluation_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="50" lean-forward="false" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+          <folding>
+            <element signature="e#103#130#0" expanded="false" />
+            <element signature="e#328#7618#0" expanded="false" />
+            <element signature="e#328#504#1" expanded="false" />
+            <element signature="e#600#805#0" expanded="false" />
+            <element signature="e#901#1272#0" expanded="false" />
+            <element signature="e#1303#1366#0" expanded="false" />
+            <element signature="e#1412#1960#0" expanded="false" />
+            <element signature="e#1412#1586#1" expanded="false" />
+            <element signature="e#2032#2181#0" expanded="false" />
+            <element signature="e#2223#2247#0" expanded="false" />
+            <element signature="e#2293#2321#0" expanded="false" />
+            <element signature="e#2382#2605#0" expanded="false" />
+            <element signature="e#2654#2729#0" expanded="false" />
+            <element signature="e#2870#7618#0" expanded="false" />
+            <element signature="e#3576#7554#0" expanded="false" />
+            <element signature="e#4078#7554#0" expanded="false" />
+            <element signature="e#4392#4468#0" expanded="false" />
+            <element signature="e#4511#5211#0" expanded="false" />
+            <element signature="e#4511#4548#0" expanded="false" />
+            <element signature="e#4711#5127#0" expanded="false" />
+            <element signature="e#4804#5078#0" expanded="false" />
+            <element signature="e#5493#5569#0" expanded="false" />
+            <element signature="e#5847#7554#0" expanded="false" />
+            <element signature="e#7682#7723#0" expanded="false" />
+            <element signature="e#7775#8201#0" expanded="false" />
+            <element signature="e#7775#7919#1" expanded="false" />
+            <element signature="e#8055#8201#0" expanded="false" />
+            <element signature="e#8280#9294#0" expanded="false" />
+            <element signature="e#8280#8606#1" expanded="false" />
+            <element signature="e#9355#10143#0" expanded="false" />
+            <element signature="e#10250#11407#0" expanded="false" />
+            <element signature="e#10405#10603#0" expanded="false" />
+            <element signature="e#11516#12676#0" expanded="false" />
+            <element signature="e#11672#11871#0" expanded="false" />
+            <element signature="e#12678#12770#0" expanded="false" />
+            <element signature="e#12891#14091#0" expanded="false" />
+            <element signature="e#13060#13273#0" expanded="false" />
+            <element signature="e#14207#15688#0" expanded="false" />
+            <element signature="e#14207#14216#0" expanded="false" />
+            <element signature="e#15895#17306#0" expanded="false" />
+            <element signature="e#17338#18880#0" expanded="false" />
+            <element signature="e#17647#18108#0" expanded="false" />
+            <element signature="e#18913#19743#0" expanded="false" />
+            <element signature="e#18935#19358#0" expanded="false" />
+            <element signature="e#19449#19547#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_scripts/evaluation_parameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="85" lean-forward="false" selection-start-line="3" selection-start-column="85" selection-end-line="3" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_scripts/plotting_control_actions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#115#145#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_scripts/plotting_mpc_target_and_resulting_states.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_scripts/plotting_multiple_trajectories.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_scripts/plotting_trajectory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="60" lean-forward="false" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+          <folding>
+            <element signature="e#114#144#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotting/plotty.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="e#559#794#0" expanded="false" />
+            <element signature="e#845#1011#0" expanded="false" />
+            <element signature="e#1071#1264#0" expanded="false" />
+            <element signature="e#1127#1178#0" expanded="false" />
+            <element signature="e#1319#1383#0" expanded="false" />
+            <element signature="e#1438#1502#0" expanded="false" />
+            <element signature="e#1559#1977#0" expanded="false" />
+            <element signature="e#2493#3552#0" expanded="false" />
+            <element signature="e#2493#2787#1" expanded="false" />
+            <element signature="e#2805#3158#0" expanded="false" />
+            <element signature="e#3204#3393#0" expanded="false" />
+            <element signature="e#3223#3393#0" expanded="false" />
+            <element signature="e#3608#3989#0" expanded="false" />
+            <element signature="e#3608#3836#1" expanded="false" />
+            <element signature="e#4136#5033#0" expanded="false" />
+            <element signature="e#4136#4415#1" expanded="false" />
+            <element signature="e#4833#5007#0" expanded="false" />
+            <element signature="e#5147#5447#0" expanded="false" />
+            <element signature="e#5555#5663#0" expanded="false" />
+            <element signature="e#5766#6252#0" expanded="false" />
+            <element signature="e#5822#5990#0" expanded="false" />
+            <element signature="e#6332#6373#0" expanded="false" />
+            <element signature="e#6431#6569#0" expanded="false" />
+            <element signature="e#6472#6521#0" expanded="false" />
+            <element signature="e#6627#6647#0" expanded="false" />
+            <element signature="e#6696#6706#0" expanded="false" />
+            <element signature="e#6792#6840#0" expanded="false" />
+            <element signature="e#6929#6968#0" expanded="false" />
+            <element signature="e#7035#7098#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_environment_steps_lqr.py" />
+    <entry file="file://$PROJECT_DIR$/tests/test_mpc_control.py" />
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="170">
+            <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/control_and_ai/DDPG/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -381,244 +875,258 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.ipynb_checkpoints/Prototyping-checkpoint.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/environments/lunarlander.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototyping/prototyping_and_testing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="42" column="17" lean-forward="true" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plotting/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/control_and_ai/unstable_control/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/control_and_ai/function_approximation_rl/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_simulation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/control_and_ai/DDPG/README">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/DDPG/actor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#108#131#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/DDPG/critic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#109#132#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/DDPG/ddpg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding>
+            <element signature="e#166#189#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/DDPG/exploration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/DDPG/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#99#117#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/DDPG/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="49" lean-forward="false" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+          <folding>
+            <element signature="e#102#112#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/control_and_ai/DDPG/train_ddpg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="-594">
+          <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+          <folding>
+            <element signature="e#85#108#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/DDPG/train_ddpg_gpu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+          <folding>
+            <element signature="e#104#145#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/DDPG/train_second_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="71" column="50" lean-forward="false" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+          <folding>
+            <element signature="e#104#114#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/DDPG/train_third_model_normalized.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="73" column="50" lean-forward="false" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
+          <folding>
+            <element signature="e#104#114#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/DDPG/train_third_model_unnormalized.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#104#114#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_and_ai/DDPG/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <folding>
+            <element signature="e#107#130#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/control_and_ai/controllers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="229">
+          <caret line="180" column="38" lean-forward="false" selection-start-line="180" selection-start-column="38" selection-end-line="180" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/control_and_ai/evolutionary_strategy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="63">
+          <caret line="3" column="72" lean-forward="false" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/control_and_ai/function_approximation_q_learning.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/control_and_ai/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="105">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/control_and_ai/mpc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="63">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/control_and_ai/pid.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="36">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/environments/__init__.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1923564988/numpy/random/mtrand.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="2760" column="4" lean-forward="false" selection-start-line="2760" selection-start-column="4" selection-end-line="2760" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/conda/conda/envs/HERCULES/Lib/site-packages/Box2D/Box2D.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="5724" column="8" lean-forward="false" selection-start-line="5724" selection-start-column="8" selection-end-line="5724" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/environments/rocketlander.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluation/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluation/evaluation_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="12633">
+          <caret line="898" column="40" lean-forward="false" selection-start-line="898" selection-start-column="40" selection-end-line="898" selection-end-column="40" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#226#332#0" expanded="true" />
+            <element signature="e#796#849#0" expanded="false" />
+            <element signature="e#1063#1188#0" expanded="false" />
+            <element signature="e#1265#1391#0" expanded="false" />
+            <element signature="e#2752#2836#0" expanded="false" />
+            <element signature="e#2868#4873#0" expanded="false" />
+            <element signature="e#3349#3368#0" expanded="false" />
+            <element signature="e#3996#4302#0" expanded="false" />
+            <element signature="e#4267#4302#0" expanded="false" />
+            <element signature="e#4576#4742#0" expanded="false" />
+            <element signature="e#5702#6265#0" expanded="false" />
+            <element signature="e#5983#6265#0" expanded="false" />
+            <element signature="e#6028#6096#0" expanded="false" />
+            <element signature="e#6320#6429#0" expanded="false" />
+            <element signature="e#7593#7864#0" expanded="false" />
+            <element signature="e#7992#8028#0" expanded="false" />
+            <element signature="e#8075#8111#0" expanded="false" />
+            <element signature="e#8376#10230#0" expanded="false" />
+            <element signature="e#8376#8454#0" expanded="false" />
+            <element signature="e#8797#10141#0" expanded="false" />
+            <element signature="e#8835#10141#0" expanded="false" />
+            <element signature="e#10296#12914#0" expanded="false" />
+            <element signature="e#10296#10374#0" expanded="false" />
+            <element signature="e#10784#12878#0" expanded="false" />
+            <element signature="e#10849#12878#0" expanded="false" />
+            <element signature="e#11056#11115#0" expanded="false" />
+            <element signature="e#11972#12061#0" expanded="false" />
+            <element signature="e#12242#12653#0" expanded="false" />
+            <element signature="e#12698#12878#0" expanded="false" />
+            <element signature="e#12712#12877#0" expanded="false" />
+            <element signature="e#38689#39047#0" expanded="false" />
+            <element signature="e#38723#39047#0" expanded="false" />
+            <element signature="e#38766#38944#0" expanded="false" />
+            <element signature="e#38847#38919#0" expanded="false" />
+            <element signature="e#39457#39524#0" expanded="false" />
+            <element signature="e#39720#40117#0" expanded="false" />
+            <element signature="e#40803#40845#0" expanded="false" />
+            <element signature="e#40935#41251#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluation/evaluation_parameters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluation/plotting_control_actions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluation/plotting_mpc_target_and_resulting_states.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluation/plotting_multiple_trajectories.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluation/plotting_trajectory.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plotting/plotty.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plotting/realtime_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state relative-caret-position="349">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_simulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>

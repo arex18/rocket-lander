@@ -1,3 +1,9 @@
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: Train DDPG network.
+"""
+
 import tensorflow as tf
 from control_and_ai.DDPG.ddpg import DDPG
 from control_and_ai.DDPG.train import set_up

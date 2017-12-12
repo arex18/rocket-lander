@@ -1,6 +1,13 @@
-from constants import *
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: Builds custom states for AI training purposes.
+"""
+import numpy as np
 
 class State_Builder():
+    """ Builds custom states associated with the environment of Rocket Lander. General, but Rocket Lander specific. """
+
     def __init__(self, integral_number):
         self.integrals = [0 for i in range(integral_number)]
 

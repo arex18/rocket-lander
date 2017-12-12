@@ -1,7 +1,15 @@
-from constants import *
-from .helpers import *
-from main_simulation import RocketLander
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: Evolutionary Networks implementation with runnable scripts.
+"""
 
+from .helpers import *
+from environments.rocketlander import RocketLander
+import numpy as np
+import concurrent.futures
+
+""" Difference between the two classes is in their implementation. """
 class EvolutionNetwork():
     def __init__(self, hyper_parameters: dict, loadfilename=None):
         # Unpack ES hyper_parameters for readability
@@ -52,7 +60,6 @@ class EvolutionNetwork():
     def save_genes(self, filename):
         np.save(filename, self.weights)
 
-
 class EvolutionaryNetWork:
     def __init__(self, sigma=0.01, state_size=8,
                  action_size=4, population_size=100, loadfilepath=None):
@@ -85,7 +92,6 @@ class EvolutionaryNetWork:
 
     def save_genes(self, savefilepath):
         np.save(savefilepath, self.weight)
-
 
 def evolutionary_network_transformable_state(env, hyper_parameters: dict, logger, loadpath=None, savepath=None):
     gen_num = hyper_parameters['number_of_generations']
@@ -146,7 +152,6 @@ def evolutionary_network_transformable_state(env, hyper_parameters: dict, logger
             logger.info("{0}\t{1}\t{2}".format(episode, running_reward, np.mean(rewards)))
 
     run(EV, env)
-
 
 def evolutionary_network_variable_psi_transformable_state(simulation_settings, logger, save=False):
     print("evolutionary_network_variable_psi_transformable_state")

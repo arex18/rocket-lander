@@ -1,3 +1,9 @@
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: Define the exploration policy of the networks.
+"""
+
 import numpy as np
 
 class ExplorationPolicy():

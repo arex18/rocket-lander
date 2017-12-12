@@ -1,10 +1,15 @@
-from DDPG.ddpg import DDPG
-from DDPG.train import set_up
-from DDPG.train_third_model_normalized import train as train_third_model_normalized
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: Train DDPG network in a different way.
+"""
 
+from control_and_ai.DDPG.ddpg import DDPG
+from control_and_ai.DDPG.train import set_up
+from control_and_ai.DDPG.train_third_model_normalized import train as train_third_model_normalized
 from constants import DEGTORAD
 from control_and_ai.DDPG.exploration import OUPolicy
-from main_simulation import RocketLander
+from environments.rocketlander import RocketLander
 
 FLAGS = set_up()
 

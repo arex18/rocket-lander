@@ -1,19 +1,25 @@
-from evaluation.plotting_trajectory import *
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: General scripts for graphing instead of notebook.
+"""
+
+from evaluation_scripts.plotting_trajectory import *
 
 
 def plot_single_trajectories(res):
     # Low Disc
-    x_planned = np.load('C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation//'
+    x_planned = np.load('C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation_scripts//'
                             'mpc//x_planned.npy')
-    y_planned = np.load('C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation//'
+    y_planned = np.load('C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation_scripts//'
                         'mpc//y_planned.npy')
 
-    x_target = np.load('C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation//'
+    x_target = np.load('C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation_scripts//'
                         'mpc//x_target.npy')
-    y_target = np.load('C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation//'
+    y_target = np.load('C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation_scripts//'
                        'mpc//y_target.npy')
 
-    resulting_states = np.load('C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation//'
+    resulting_states = np.load('C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation_scripts//'
                        'mpc//resulting_states.npy')
 
 

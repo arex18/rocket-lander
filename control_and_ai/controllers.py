@@ -1,5 +1,13 @@
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: Rocket Lander Controllers that are called for evaluation.
+"""
+
 from constants import *
-from main_simulation import compute_derivatives
+import numpy as np
+import abc
+from environments.rocketlander import compute_derivatives
 
 ''' Main Environment Parent Class'''
 class EnvController():
@@ -66,10 +74,10 @@ class MPC_Controller(EnvController):
                                                           timespan=self.mpc_settings['time_span'])
 
     def draw(self, env):
-        env.drawLine(x=self.targets[XX], y=self.targets[YY], color=(0, 0, 0))
-        env.drawLine(x=np.array(self.planned_states[0, :].value).squeeze(),
-                     y=np.array(self.planned_states[1, :].value).squeeze(),
-                     color=(1, 0, 0))
+        env.draw_line(x=self.targets[XX], y=self.targets[YY], color=(0, 0, 0))
+        env.draw_line(x=np.array(self.planned_states[0, :].value).squeeze(),
+                      y=np.array(self.planned_states[1, :].value).squeeze(),
+                      color=(1, 0, 0))
 
     def get_targets(self):
 
@@ -170,7 +178,7 @@ class General_DDPG_Controller():
         # test(env,controller,simulation_settings)
 
     def sample_state_and_create_normalizer(self):
-        from main_simulation import get_state_sample
+        from environments.rocketlander import get_state_sample
 
         state_samples = get_state_sample(samples=2000, normal_state=self.normal_state_FLAG,
                                          untransformed_state=self.untransformed_state_FLAG)

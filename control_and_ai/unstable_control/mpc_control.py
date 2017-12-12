@@ -1,7 +1,9 @@
+import matplotlib.pyplot as plt
+from environments.rocketlander import RocketLander, compute_derivatives
 from constants import *
-from main_simulation import RocketLander, compute_derivatives
-from control_and_ai.helpers import *
-
+import numpy as np
+from control_and_ai.pid import PID_psi
+from control_and_ai.mpc import MPC
 
 def plot_trajectory(controller, y_target_profile, initial_untransformed_state):
     x, y, x_dot, y_dot, theta, theta_dot = controller.guidance_target(state=initial_untransformed_state, final_x=16.5, y_profile=y_target_profile,
@@ -92,9 +94,9 @@ def MPC_controller_run(env, simulation_settings, controller):
                         if iteration % 1 == 0:
                             if simulation_settings['Render']:
                                 env.render()
-                                env.drawLine(x=targets[XX], y=targets[YY], color=(0, 0, 0))
-                                env.drawLine(x=np.array(x[0, :].value).squeeze(), y=np.array(x[1, :].value).squeeze(),
-                                             color=(1, 0, 0))
+                                env.draw_line(x=targets[XX], y=targets[YY], color=(0, 0, 0))
+                                env.draw_line(x=np.array(x[0, :].value).squeeze(), y=np.array(x[1, :].value).squeeze(),
+                                              color=(1, 0, 0))
                                 env.refresh()
 
                 print("X:\t{0}\t{1}".format(env.untransformed_state[0], env.untransformed_state[2]))
@@ -170,9 +172,9 @@ def MPC_controller_run_custom(env, simulation_settings, controller, Q, R, time_h
 
                         if simulation_settings['Render'] or iteration % 5 == 0:
                             env.render()
-                            env.drawLine(x=targets[XX], y=targets[YY], color=(0, 0, 0))
-                            env.drawLine(x=np.array(x[0, :].value).squeeze(), y=np.array(x[1, :].value).squeeze(),
-                                         color=(1, 0, 0))
+                            env.draw_line(x=targets[XX], y=targets[YY], color=(0, 0, 0))
+                            env.draw_line(x=np.array(x[0, :].value).squeeze(), y=np.array(x[1, :].value).squeeze(),
+                                          color=(1, 0, 0))
                             env.refresh()
                 else:
                     print("Action is None!")

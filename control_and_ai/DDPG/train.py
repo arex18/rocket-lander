@@ -1,13 +1,18 @@
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: This is a general training template.
+"""
+
 import sys
 import os
 import shutil
-import gym
 import argparse
-import sklearn.preprocessing
 sys.path.append('C://Users//REUBS_LEN//PycharmProjects//RocketLanding')
-from main_simulation import get_state_sample
-from constants import *
+from environments.rocketlander import get_state_sample
 from .utils import Utils
+import numpy as np
+from constants import *
 
 
 def train(env, agent, FLAGS):
@@ -64,6 +69,7 @@ def train(env, agent, FLAGS):
             agent.save_model(episode)
         print("Episode:\t{0}Reward:\t{1}".format(episode, total_reward))
 
+# Left here from the original code repo reference
 def set_up():
     parser = argparse.ArgumentParser()
 

@@ -1,12 +1,19 @@
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: Quick scripts written for evaluation.
+"""
+
 from threading import Timer
 from main_simulation import RocketLander
-from evaluation.evaluation_parameters import *
+from evaluation_scripts.evaluation_parameters import *
 from control_and_ai.controllers import *
+from constants import *
 
 
 class Evaluation_Framework():
     """
-    This Framework is intended for the evaluation of controllers. Once instantiated, execute_evaluation should be called
+    This Framework is intended for the evaluation_scripts of controllers. Once instantiated, execute_evaluation should be called
     , with the required parameters.
     """
     def __init__(self, simulation_settings : dict, controller_settings : dict = None):
@@ -216,7 +223,7 @@ def calculate_stats_percentages(action_history, psi_degree_threshold=3):
 ''' Evaluation Functions '''
 # PID
 def evaluate_pid():
-    file_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation//pid'
+    file_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation_scripts//pid'
 
     env = RocketLander(simulation_settings)
     pid_controller = PID_Controller()
@@ -230,7 +237,7 @@ def evaluate_pid():
 
 # Low Discretization Q-Learning
 def evaluate_low_discretization_q_learning_function_approximation():
-    file_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation//rl_q_learning//low_discretization'
+    file_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation_scripts//rl_q_learning//low_discretization'
 
     load_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//function_approximation_rl' \
                 '//rl_linear_function_approximation_low_function_discretization_trained_at_once.p'
@@ -248,7 +255,7 @@ def evaluate_low_discretization_q_learning_function_approximation():
 
 # High Discretization Q-Learning
 def evaluate_high_discretization_q_learning_function_approximation():
-    file_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation//rl_q_learning//high_discretization'
+    file_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation_scripts//rl_q_learning//high_discretization'
 
     load_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//function_approximation_rl' \
                 '//rl_linear_function_approximation_high_function_discretization_trained_at_once.p'
@@ -267,7 +274,7 @@ def evaluate_high_discretization_q_learning_function_approximation():
 #rl_linear_function_approximation_high_function_discretization_5000_episodes_trained_at_once
 # High Discretization Q-Learning
 def evaluate_high_discretization_q_learning_function_approximation_longer_state():
-    file_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation//rl_q_learning//high_discretization_longer_state'
+    file_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation_scripts//rl_q_learning//high_discretization_longer_state'
 
     load_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//function_approximation_rl' \
                 '//rl_linear_function_approximation_high_function_discretization_5000_episodes_trained_at_once.p'
@@ -313,7 +320,7 @@ def evaluate_normalized_normal_state_ddpg():
 def evaluate_unnormalized_longer_state_ddpg():
     load_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//DDPG//model_2_longer_unnormalized_state'
 
-    file_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation//ddpg//model_2_unnormalized_longer_state'
+    file_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation_scripts//ddpg//model_2_unnormalized_longer_state'
 
     normal_state_FLAG = False
     untransformed_state_FLAG = False
@@ -335,7 +342,7 @@ def evaluate_unnormalized_longer_state_ddpg():
 
 # MPC
 def evaluate_MPC():
-    file_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation//mpc'
+    file_path = 'C://Users//REUBS_LEN//PycharmProjects//RocketLanding//control_and_ai//evaluation_scripts//mpc'
 
     k, p = 100, 10
 

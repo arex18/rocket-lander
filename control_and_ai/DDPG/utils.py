@@ -1,3 +1,9 @@
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: NN layer helper functions, normalization.
+"""
+
 import tensorflow as tf
 import sklearn.preprocessing
 import numpy as np

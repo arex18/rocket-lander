@@ -8,29 +8,11 @@ import pandas as pd
 import numpy as np
 
 
-def create_realtime_graphs(initialSubplot=111, x1=0, x2=0, y1=0, y2=0):
-    """
-    Creates a real time graph with a specified number of subplots.
-    :param initialSubplot: Matplotlib style subplot convention, e.g. 211
-    :param x1: First x-axis limit
-    :param x2: Second x-axis limit
-    :param y1: First y-axis limit
-    :param y2: Second y-axis limit
-    :return:
-    """
-    graph = RealTimeGraph(initialSubplot)
-    if x2 != 0:
-        graph.setXLimits(x1, x2)
-    if y2 != 0:
-        graph.setYLimits(y1, y2)
-
-    return graph
-
-class RealTimeGraph():
+class RealTimeGraph:
     """
     Creates a figure that is able to handle low number of data points in "real time". It still uses Matplotlib,
     which makes it unscalable for real time plotting. See realtime_plot.py as a replacement.
-    *THIS IS NOT MEANT TO BE DEPLOYED*
+    Known crashing error. Not meant to be deployed.
     """
     def __init__(self, subplots=111):
         self.ptr = 0
@@ -83,9 +65,22 @@ class RealTimeGraph():
         self.fig.canvas.blit(self.ax[subplot].bbox)                             # fill in the self.axes rectangle
         plt.pause(1e-30)
 
-class Graphing():
+class Graphing:
     """
     Graphing helper class developed on Matplotlib.
+
+    Example Use:
+
+    res = Graphing.Results(create_figure=True)
+    ax = res.add_subplot(0, 211, "Epoch", "Error")
+    ax2 = res.add_subplot(0, 212, "Epoch", "Accuracy")
+
+    res.plot_graph(training_epochvalues, trainingerror, ax, "Train. Error"+labeltext)
+
+    res.show_legend(ax)
+    res.show_legend(ax2)
+    plt.show()
+
     """
     figurenumber = 0
     figures = []
@@ -158,7 +153,6 @@ class Graphing():
 
         return fig, axis
 
-
     def add_subplot(self, figure, subplotnumber=111, xtitle='', ytitle='', grid=True, *args, **kwargs):
         ax = figure.add_subplot(subplotnumber, *args, **kwargs)
         ax.set_xlabel(xtitle, **kwargs)
@@ -219,17 +213,20 @@ class Graphing():
         y.hist()
         y.plot(kind='kde')
 
-'''
-Example Use:
+def create_realtime_graphs(initialSubplot=111, x1=0, x2=0, y1=0, y2=0):
+    """
+    Creates a real time graph with a specified number of subplots.
+    :param initialSubplot: Matplotlib style subplot convention, e.g. 211
+    :param x1: First x-axis limit
+    :param x2: Second x-axis limit
+    :param y1: First y-axis limit
+    :param y2: Second y-axis limit
+    :return:
+    """
+    graph = RealTimeGraph(initialSubplot)
+    if x2 != 0:
+        graph.setXLimits(x1, x2)
+    if y2 != 0:
+        graph.setYLimits(y1, y2)
 
-res = Graphing.Results(create_figure=True)
-ax = res.add_subplot(0, 211, "Epoch", "Error")
-ax2 = res.add_subplot(0, 212, "Epoch", "Accuracy")
-
-res.plot_graph(training_epochvalues, trainingerror, ax, "Train. Error"+labeltext)
-
-res.show_legend(ax)
-res.show_legend(ax2)
-plt.show()
-'''
-########################################################################################################################
+    return graph

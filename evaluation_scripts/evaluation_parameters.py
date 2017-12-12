@@ -1,3 +1,9 @@
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: Different states for testing and benchmarking the different controllers.
+"""
+
 from constants import DEGTORAD
 
 """

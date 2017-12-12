@@ -1,23 +1,6 @@
 import sys, math
 import matplotlib
 matplotlib.use('TkAgg')
-# TODO clean this up, add proper imports to files.
-import matplotlib.pyplot as plt
-from gym import spaces
-from plotting.realtime_plot import RealTime_Graph_Thread
-import numpy as np
-import Box2D
-# Ignore the warning "Unresolved Reference" in this case.
-from gym.envs.classic_control import rendering
-import gym
-from gym import spaces
-from gym.utils import seeding
-import logging
-import pyglet
-from pyglet import gl
-import cvxpy as opt
-import abc
-import concurrent.futures
 from enum import Enum
 
 
@@ -89,7 +72,7 @@ LEG_SPRING_TORQUE = LANDER_LENGTH/2
 NOZZLE_TORQUE = 500 / LANDER_CONSTANT
 NOZZLE_ANGLE_LIMIT = 15*DEGTORAD
 
-BARGE_FRICTION = 1
+BARGE_FRICTION = 2
 
 # --------------------------------
 """Landing Calibration"""

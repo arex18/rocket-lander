@@ -1,3 +1,10 @@
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: General plotting helpers for the Rocket Lander.
+"""
+
+
 from plotting.plotty import  *
 import numpy as np
 

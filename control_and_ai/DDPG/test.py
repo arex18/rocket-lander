@@ -1,11 +1,15 @@
-import numpy as np
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: Not a unit test, simple run test.
+"""
 
+import numpy as np
 from control_and_ai.DDPG.train import Utils
-from main_simulation import get_state_sample
+from environments.rocketlander import get_state_sample
 
 
 def test(env, agent, simulation_settings):
-
     obs_size = env.observation_space.shape[0]
     util = Utils()
     state_samples = get_state_sample(samples=5000, normal_state=True)

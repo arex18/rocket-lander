@@ -1,12 +1,18 @@
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: Train DDPG network in a different way.
+"""
+
 import sys
 import os
 import shutil
-import gym
 import argparse
 sys.path.append('C://Users//REUBS_LEN//PycharmProjects//RocketLanding')
-from main_simulation import get_state_sample
+from environments.rocketlander import get_state_sample
 from constants import *
 from .utils import Utils
+import numpy as np
 
 
 def train(env, agent, FLAGS):
@@ -66,54 +72,3 @@ def train(env, agent, FLAGS):
             print('Saved model at episode', episode)
             agent.save_model(episode)
         print("Reward:\t{0}".format(total_reward))
-
-def set_up():
-    parser = argparse.ArgumentParser()
-
-    parser.add_argument(
-        '--num_episodes',
-        type=int,
-        default=1000,
-        help='How many episodes to train for'
-    )
-
-    parser.add_argument(
-        '--show',
-        default=False,
-        action='store_true',
-        help='At what point to render the cart environment'
-    )
-
-    parser.add_argument(
-        '--wipe_logs',
-        default=False,
-        action='store_true',
-        help='Wipe logs or not'
-    )
-
-    parser.add_argument(
-        '--log_dir',
-        default='logs',
-        help='Where to store logs'
-    )
-
-    parser.add_argument(
-        '--retrain',
-        default=False,
-        action='store_true',
-        help='Whether to start training from scratch again or not'
-    )
-
-    parser.add_argument(
-        '--test',
-        default=False,
-        action='store_true',
-        help='Test more or no (true = no training updates)'
-    )
-
-    FLAGS, unparsed = parser.parse_known_args()
-
-    if FLAGS.wipe_logs and os.path.exists(os.getcwd() + '/' + FLAGS.log_dir):
-        shutil.rmtree(os.getcwd() + '/' + FLAGS.log_dir)
-
-    return FLAGS

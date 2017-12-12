@@ -1,7 +1,18 @@
-from constants import *
+"""
+Author: Reuben Ferrante
+Date:   10/05/2017
+Description: MPC definition.
+"""
 
-""" MPC """
+from constants import *
+import numpy as np
+import matplotlib.pyplot as plt
+import cvxpy as opt
+
+
 class MPC:
+    """ This class encapsulates the optimization related to MPC. Specific for Rocket Lander, not general. """
+
     def __init__(self, env):
         # last 2 state elements are not used since the environment includes left leg contact and right leg contact
         self.state_len = len(env.state[:-2])
@@ -130,47 +141,6 @@ class MPC:
         # u[0, :].value.A.flatten()
         return x, u
 
-    # def optimize_linearized_model(self, A, B, initial_state, Q, R, target, time_horizon=10, verbose=False):
-    #     """
-    #     Optimisation problem defined for the linearised model, where the linearised state space is computed with
-    #     finite differences (matrices A, B)
-    #     :param A: Computed with finite differences
-    #     :param B: Computed with finite differences
-    #     :param initial_state:
-    #     :param Q:
-    #     :param R:
-    #     :param target:
-    #     :param time_horizon:
-    #     :param verbose:
-    #     :return:
-    #     """
-    #     assert len(initial_state) == self.state_len
-    #     # Create variables
-    #     x = opt.Variable(self.state_len, time_horizon+1, name='states')
-    #     u = opt.Variable(self.action_len, time_horizon, name='actions')
-    #     epsilon = np.array([0.001,0.001,0.001,0.001,0.001,0.001])
-    #     final_allowable_error = [0.5, 0.5, 0.5, 0.5, 0.1, 0.1]
-    #     # Loop through the entire time_horizon and append costs
-    #     cost_function = []
-    #
-    #     for t in range(time_horizon):
-    #         # _cost = opt.norm(x[2, t + 1],2)*50 + opt.norm(x[3, t + 1],2)*50 + opt.quad_form(target[:, t + 1] - x[:, t + 1], Q) + opt.quad_form(u[:, t], R) + opt.quad_form(u[:, t]-u[:, t-1], R*0.1)
-    #         _cost = opt.quad_form(target[:, t+1] - x[:, t+1], Q*10) + opt.quad_form(x[:, t+1], Q)+opt.quad_form(u[:, t], R)
-    #         _constraints = [x[:, t+1] == A*x[:, t] + B*u[:, t],
-    #                         u[0, t] >= MAIN_ENGINE_POWER/5, u[0, t] <= MAIN_ENGINE_POWER/1.1,
-    #                         u[1, t] >= -SIDE_ENGINE_POWER, u[1, t] <= SIDE_ENGINE_POWER,
-    #                         u[2,t] > 0.2]#u[2, t] >= -self.angle_limit, u[2, t] <= self.angle_limit]
-    #
-    #         cost_function.append(opt.Problem(opt.Minimize(_cost), constraints=_constraints))
-    #
-    #     # Add final cost
-    #     problem = sum(cost_function)
-    #     problem.constraints += [x[:, time_horizon] == target[:, time_horizon],
-    #                             x[:, 0] == initial_state]
-    #     # Minimize Problem
-    #     problem.solve(verbose=verbose, solver=opt.SCS)
-    #     # u[0, :].value.A.flatten()
-    #     return x, u
 
     def optimize_with_PID(self, A, B, initial_state, Q, R, target, time_horizon=10, verbose=False):
         """
@@ -357,42 +327,6 @@ class MPC:
         res.show_legend([ax1, ax2, ax3])
         res.show_plot()
         plt.show()
-        # f = plt.figure()
-        #
-        # # Plot (u_t)_1.
-        # ax = f.add_subplot(411)
-        # plt.plot(u[0, :].value.A.flatten())
-        # plt.ylabel(r"$(u_t)_1$", fontsize=16)
-        # plt.yticks(np.linspace(-1.0, 1.0, 3))
-        # plt.xticks([])
-        #
-        # # Plot (u_t)_2.
-        # plt.subplot(4, 1, 2)
-        # plt.plot(u[2, :].value.A.flatten())
-        # plt.ylabel(r"$(u_t)_2$", fontsize=16)
-        # plt.yticks(np.linspace(-1, 1, 3))
-        # plt.xticks([])
-        #
-        # # Plot (x_t)_1.
-        # plt.subplot(4, 1, 3)
-        # x1 = x[0, :].value.A.flatten()
-        # plt.plot(x1)
-        # plt.ylabel(r"$(x_t)_1$", fontsize=16)
-        # plt.yticks([-10, 0, 10])
-        # plt.ylim([-10, 10])
-        # plt.xticks([])
-        #
-        # # Plot (x_t)_2.
-        # plt.subplot(4, 1, 4)
-        # x2 = x[1, :].value.A.flatten()
-        # plt.plot(range(51), x2)
-        # plt.yticks([-25, 0, 25])
-        # plt.ylim([-25, 25])
-        # plt.ylabel(r"$(x_t)_2$", fontsize=16)
-        # plt.xlabel(r"$t$", fontsize=16)
-        # plt.tight_layout()
-        # plt.show()
-        #
 
 def compute_matrices_A_B_linearised_PID(state, mass, nozzle_angle):
     """

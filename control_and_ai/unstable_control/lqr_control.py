@@ -1,8 +1,7 @@
-from plotting.realtime_plot import RealTime_Graph_Thread
-from main_simulation import *
-import numpy as np
 import scipy.linalg
-import control
+from constants import *
+from environments.rocketlander import simulate_kinematics, RocketLander
+
 
 class LQR_Control():
     def __init__(self, env, continuous_solver=False):
@@ -129,7 +128,6 @@ def run(env, simulation_settings, controller):
             total_reward = 0
             episodes += 1
     print(env.lander.mass)
-
 
 simulation_settings = {'Side Engines': True,
             'Clouds': False,
