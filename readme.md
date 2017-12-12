@@ -57,6 +57,8 @@ python main_simulation.py
 ## Problem Definition
 ### Introduction
 
+![rocket model](https://user-images.githubusercontent.com/16338481/33860716-021480d8-ded2-11e7-85b4-6fffbcea0258.PNG)
+
 The point of this small project was to compare and contrast classical control methods with AI algorithms as applied to a
 **continuous control problem.** This is unlike the lunar lander, where the action space is discretized.
 Example of discretized action space:
