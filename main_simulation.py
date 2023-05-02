@@ -24,35 +24,42 @@ if __name__ == "__main__":
     # Initialize the PID algorithm
     pid = PID_Benchmark()
 
-    left_or_right_barge_movement = np.random.randint(0, 2)
+    left_or_right_barge_movement = 0 # np.random.randint(0, 2)
     epsilon = 0.05
     total_reward = 0
     episode_number = 5
 
-    for episode in range(episode_number):
-        while (1):
-            a = pid.pid_algorithm(s) # pass the state to the algorithm, get the actions
-            # Step through the simulation (1 step). Refer to Simulation Update in constants.py
-            s, r, done, info = env.step(a)
-            total_reward += r   # Accumulate reward
-            # -------------------------------------
-            # Optional render
-            env.render()
-            # Draw the target
-            env.draw_marker(env.landing_coordinates[0], env.landing_coordinates[1])
-            # Refresh render
-            env.refresh(render=False)
+    step = 0
+    with open('logfile.txt', 'w') as log:
+        log.write(f'PID controller Run:\n\n')
+        for episode in range(episode_number):
+            log.write(f'\n{"="*80}\nEpisode: {episode+1}\n{"="*80}\n\n')
+            while (1):
+                step += 1
+                log.write(f'Step: {step}, ')
+                a = pid.pid_algorithm(s) # pass the state to the algorithm, get the actions
+                # Step through the simulation (1 step). Refer to Simulation Update in constants.py
+                s, r, done, info = env.step(a)
+                total_reward += r   # Accumulate reward
+                # -------------------------------------
+                # Optional render
+                env.render()
+                # Draw the target
+                env.draw_marker(env.landing_coordinates[0], env.landing_coordinates[1])
+                # Refresh render
+                env.refresh(render=False)
 
-            # When should the barge move? Water movement, dynamics etc can be simulated here.
-            if s[LEFT_GROUND_CONTACT] == 0 and s[RIGHT_GROUND_CONTACT] == 0:
-                env.move_barge_randomly(epsilon, left_or_right_barge_movement)
-                # Random Force on rocket to simulate wind.
-                env.apply_random_x_disturbance(epsilon=0.005, left_or_right=left_or_right_barge_movement)
-                env.apply_random_y_disturbance(epsilon=0.005)
+                # When should the barge move? Water movement, dynamics etc can be simulated here.
+                if s[LEFT_GROUND_CONTACT] == 0 and s[RIGHT_GROUND_CONTACT] == 0:
+                    env.move_barge_randomly(epsilon, left_or_right_barge_movement)
+                    # Random Force on rocket to simulate wind.
+                    env.apply_random_x_disturbance(epsilon=0.005, left_or_right=left_or_right_barge_movement)
+                    env.apply_random_y_disturbance(epsilon=0.005)
 
-            # Touch down or pass abs(THETA_LIMIT)
-            if done:
-                print('Episode:\t{}\tTotal Reward:\t{}'.format(episode, total_reward))
-                total_reward = 0
-                env.reset()
-                break
+                # Touch down or pass abs(THETA_LIMIT)
+                if done:
+                    print('Episode:\t{}\tTotal Reward:\t{}'.format(episode, total_reward))
+                    total_reward = 0
+                    env.reset()
+                    break
+
